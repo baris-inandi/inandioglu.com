@@ -1,0 +1,30 @@
+---
+interface Props {
+	title: string;
+}
+
+const title = 'Barış İnandıoğlu';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="https://fav.farm/💩" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	body {
+		font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light',
+			'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+		font-weight: 300;
+	}
+</style>
