@@ -1,15 +1,34 @@
 ---
+import Button from '../components/Button.astro';
 import MainPageLayout from '../layouts/MainPageLayout.astro';
 ---
 
 <MainPageLayout title="Welcome to Astro.">
 	<div class="flex h-screen">
-		<div class="w-96 p-4 h-full text-xl flex flex-col gap-2">
-			<p class="text-2xl">Hello!👋</p>
-			<p>My name is</p>
-			<h1 class="text-3xl">Barış İnandıoğlu</h1>
-			<p>a developer 🐛</p>
-			<p>from Istanbul, Türkiye 🌍</p>
+		<div class="p-10 h-full text-xl flex flex-col gap-6">
+			<div>
+				<p class="text-2xl">Hello! 👋 My name is</p>
+				<h1 class="text-4xl">Barış İnandıoğlu</h1>
+			</div>
+			<p>I'm a developer from Istanbul, Türkiye 🌍</p>
+			<div>
+				<p>you can find me on:</p>
+				<div class="flex gap-1">
+					<Button
+						text="LinkedIn"
+						href="https://www.linkedin.com/in/baris-inandi"
+					/>
+					<Button
+						text="GitHub"
+						href="https://www.github.com/baris-inandi"
+					/>
+					<Button
+						text="Instagram"
+						href="https://www.instagram.com/barisinandi"
+					/>
+				</div>
+			</div>
+			<p>and you can reach me out at</p>
 		</div>
 	</div>
 </MainPageLayout>

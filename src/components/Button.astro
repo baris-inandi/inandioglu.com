@@ -1,0 +1,12 @@
+---
+interface Props {
+	text: string;
+	href: string;
+}
+
+const props = Astro.props;
+---
+
+<a href={props.href} class="cursor-pointer border border-neutral-400 w-fit rounded-full px-2">
+	{props.text}
+</a>
