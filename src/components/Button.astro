@@ -7,6 +7,9 @@ interface Props {
 const props = Astro.props;
 ---
 
-<a href={props.href} class="cursor-pointer border border-neutral-400 w-fit rounded-full px-2">
+<!-- 
+	class="text-base cursor-pointer border border-neutral-300 w-fit rounded-full px-3"
+ -->
+<a href={props.href} class="w-fit hover:bg-black hover:text-white">
 	{props.text}
 </a>
